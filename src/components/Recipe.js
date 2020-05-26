@@ -9,11 +9,20 @@ const Recipe = ({ recipe }) => {
     <div className="recipe">
       <h2>{label}</h2>
       <img src={image} alt={label} />
-      <a href={url} target="_blank" rel="noopener noreferrer">
-        URL
+      <a
+        className="more-info"
+        href={url}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        More Details
       </a>
       <button onClick={() => setShow(!show)}>Ingredients</button>
-      {show && <RecipeDetails ingredients={ingredients} />}
+      {show && (
+        <ul className="ingredient-list py-3">
+          <RecipeDetails ingredients={ingredients} />
+        </ul>
+      )}
     </div>
   );
 };
