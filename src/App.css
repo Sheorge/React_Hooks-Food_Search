@@ -15,7 +15,12 @@ html {
 }
 
 body {
-  background: linear-gradient(-45deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)) fixed,
+  background: linear-gradient(
+        -45deg,
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.8)
+      )
+      fixed,
     url(./images/ingredients-wallpaper.jpg) fixed;
   background-repeat: no-repeat;
   background-attachment: fixed;
